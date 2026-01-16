@@ -23,7 +23,7 @@ const SalaryOfferCard = ({ hasData = true, onRefresh, onClose }) => {
   };
 
   return (
-    <div className="relative w-full max-w-[480px] min-h-[580px] rounded-2xl bg-gradient-to-br from-pink-50 via-white to-orange-50/30 p-6 shadow-xl border border-gray-200/50 flex flex-col">
+    <div className="relative w-full sm:max-w-[480px] min-h-screen sm:min-h-[580px] sm:rounded-2xl bg-gradient-to-br from-pink-50 via-white to-orange-50/30 p-6 sm:p-6 shadow-none sm:shadow-xl border-0 sm:border border-gray-200/50 flex flex-col">
       <button 
         onClick={onClose}
         className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-xl font-bold z-10 cursor-pointer"
@@ -68,7 +68,7 @@ const SalaryOfferCard = ({ hasData = true, onRefresh, onClose }) => {
               <h3 className="text-lg font-semibold text-gray-700">Recommended Base Salary</h3>
             </div>
 
-            <p className="text-4xl font-bold text-pink-600 tracking-tight transition-all">
+            <p className="text-3xl sm:text-4xl font-bold text-pink-600 tracking-tight transition-all">
               {formatCurrency(salary)} UZS
             </p>
 
